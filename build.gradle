@@ -13,7 +13,9 @@ repositories {
 dependencies {
     implementation 'com.ubertob.kondor:kondor-core:1.5.3'
     implementation "org.http4k:http4k-client-jetty:4.9.5.0"
+    implementation 'org.junit.jupiter:junit-jupiter:5.4.2'
     testImplementation 'org.jetbrains.kotlin:kotlin-test'
+    testImplementation 'com.ubertob.kondor:kondor-tools:1.5.3'
 }
 
 test {
