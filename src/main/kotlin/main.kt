@@ -10,9 +10,10 @@ fun main() {
 
     val swapiClient = SwapiClient(httpClient)
 
-    println("Hello World!")
+    println("In a galaxy far, far away...")
 
     println(swapiClient.people(1))
+//    println(swapiClient.starships(12))
 
     System.exit(0)
 }

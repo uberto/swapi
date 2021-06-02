@@ -2,6 +2,7 @@ package com.ubertob.swapi
 
 import com.ubertob.kondor.json.StringWrapper
 import java.net.URL
+import java.time.Instant
 
 //https://toolbox.http4k.org/dataclass
 
@@ -20,8 +21,8 @@ data class Person (val name: String)
 //                   val species: List<URL>,
 //                   val vehicles: List<URL>,
 //                   val starships: List<URL>,
-//                   val created: String,
-//                   val edited: String,
+//                   val created: Instant,
+//                   val edited: Instant,
 //                   val url: URL
 //)
 
