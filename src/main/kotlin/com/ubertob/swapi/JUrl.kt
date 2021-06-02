@@ -1,7 +1,6 @@
 package com.ubertob.swapi
 
 import com.ubertob.kondor.json.*
-import com.ubertob.kondor.json.jsonnode.JsonNodeObject
 import java.net.URL
 
 object JUrl : JStringRepresentable<URL>() {
