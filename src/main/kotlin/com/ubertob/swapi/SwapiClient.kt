@@ -7,10 +7,13 @@ import org.http4k.core.Request
 
 data class SwapiClient(val httpClient: HttpHandler) {
 
-    fun people(id: Int): Person = httpClient(Request(Method.GET, "/people/$id/")).let {
+    fun people(id: Int): Person? = httpClient(Request(Method.GET, "/people/$id/")).let {
         response ->
-        println(response.bodyString())
-        Person(id)
+        val json = response.bodyString()
+        println(json)
+        Person("Luke")
+//        JPerson.fromJson(json).orThrow()
+
     }
 
     fun starships(id: Int): Starship = httpClient(Request(Method.GET, "/starships/$id/")).let {

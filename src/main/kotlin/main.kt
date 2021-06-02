@@ -13,4 +13,6 @@ fun main() {
     println("Hello World!")
 
     println(swapiClient.people(1))
+
+    System.exit(0)
 }
